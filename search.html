@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Items - Guilda Nova Ordem</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/007f29_84a436df526a4714b1f590a1eb3294c0%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/007f29_84a436df526a4714b1f590a1eb3294c0%7Emv2.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-search-container">
+        <div class="content">
+            <div class="main-container-title">
+                <h1>Search Items</h1>
+            </div>
+
+            <div class="left-content">
+                <form>
+                    <label class="search-box">
+                        <input type="search" placeholder="Search">
+                        <img class="icon" src="./_icons/search.svg">
+                    </label>
+
+                    <div class="main-tab-box">
+                        <div class="main-tab-title">
+                            <span>Type</span>
+                            <img src="./_icons/down-arrow.svg" alt="">
+                        </div>
+                        <fieldset>
+                            <label>
+                                <input type="radio" name="type" value="" checked>
+                                <span>Any</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="vendor">
+                                <span>Vendor</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="drop">
+                                <span>Drop</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="type" value="craft">
+                                <span>Craft</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    
+                    <div class="main-tab-box">
+                        <div class="main-tab-title">
+                            <span>Item Type</span>
+                            <img src="./_icons/down-arrow.svg" alt="">
+                        </div>
+                        <fieldset>
+                            <label>
+                                <input type="radio" name="itemType" value="" checked>
+                                <span>Any</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Back">
+                                <span>Back</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Bag">
+                                <span>Bag</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="BeastOfBurden">
+                                <span>Beast Of Burden</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Certification">
+                                <span>Certification</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Consumable">
+                                <span>Consumable</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Fuel">
+                                <span>Fuel</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Gathering">
+                                <span>Gathering</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Gear">
+                                <span>Gear</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Mount">
+                                <span>Mount</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Processing">
+                                <span>Processing</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemType" value="Resource">
+                                <span>Resource</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    
+                    <div class="main-tab-box">
+                        <div class="main-tab-title">
+                            <span>Item Sub Type</span>
+                            <img src="./_icons/down-arrow.svg" alt="">
+                        </div>
+                        <fieldset>
+                            <label>
+                                <input type="radio" name="itemSubType" value="" checked>
+                                <span>Any</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Accessory">
+                                <span>Accessory</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Aquatic">
+                                <span>Aquatic</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Armor">
+                                <span>Armor</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Artisan">
+                                <span>Artisan</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="cert">
+                                <span>cert</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Crowbar">
+                                <span>Crowbar</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Drink">
+                                <span>Drink</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Elixir">
+                                <span>Elixir</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Enchanting">
+                                <span>Enchanting</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Flying">
+                                <span>Flying</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Food">
+                                <span>Food</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Ground">
+                                <span>Ground</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Hunting">
+                                <span>Hunting</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Novice">
+                                <span>Novice</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Potion">
+                                <span>Potion</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Processed">
+                                <span>Processed</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Raw">
+                                <span>Raw</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Recipe">
+                                <span>Recipe</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Salve">
+                                <span>Salve</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Scroll">
+                                <span>Scroll</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="SurveyPylon">
+                                <span>Survey Pylon</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="TreasureMap">
+                                <span>Treasure Map</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubType" value="Weapon">
+                                <span>Weapon</span>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="main-tab-box">
+                        <div class="main-tab-title">
+                            <span>Item Category</span>
+                            <img src="./_icons/down-arrow.svg" alt="">
+                        </div>
+                        <fieldset>
+                            <label>
+                                <input type="radio" name="itemCategory" value="" checked>
+                                <span>Any</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="1Hand">
+                                <span>1Hand</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="2Hand">
+                                <span>2Hand</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Back">
+                                <span>Back</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Chest">
+                                <span>Chest</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Crafting">
+                                <span>Crafting</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Earring">
+                                <span>Earring</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Feet">
+                                <span>Feet</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Forearms">
+                                <span>Forearms</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Fuel">
+                                <span>Fuel</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Gathering">
+                                <span>Gathering</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Gear">
+                                <span>Gear</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Hands">
+                                <span>Hands</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Head">
+                                <span>Head</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Legs">
+                                <span>Legs</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Necklace">
+                                <span>Necklace</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="OffHand">
+                                <span>OffHand</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Pants">
+                                <span>Pants</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Processing">
+                                <span>Processing</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Resource">
+                                <span>Resource</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Ring">
+                                <span>Ring</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Shirt">
+                                <span>Shirt</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Shoulder">
+                                <span>Shoulder</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Toolbelt">
+                                <span>Toolbelt</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemCategory" value="Waist">
+                                <span>Waist</span>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="main-tab-box">
+                        <div class="main-tab-title">
+                            <span>Item Sub Category</span>
+                            <img src="./_icons/down-arrow.svg" alt="">
+                        </div>
+                        <fieldset>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="" checked>
+                                <span>Any</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Book">
+                                <span>Book</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Charm">
+                                <span>Charm</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Earring">
+                                <span>Earring</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Focus">
+                                <span>Focus</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Gem">
+                                <span>Gem</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Heavy">
+                                <span>Heavy</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Light">
+                                <span>Light</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Longbow">
+                                <span>Longbow</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Mace">
+                                <span>Mace</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Medium">
+                                <span>Medium</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Metal">
+                                <span>Metal</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Necklace">
+                                <span>Necklace</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Pants">
+                                <span>Pants</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Plant">
+                                <span>Plant</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Ring">
+                                <span>Ring</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Scepter">
+                                <span>Scepter</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Scroll">
+                                <span>Scroll</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Seed">
+                                <span>Seed</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Shield">
+                                <span>Shield</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Shirt">
+                                <span>Shirt</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Shortbow">
+                                <span>Shortbow</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Sigil">
+                                <span>Sigil</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="SportFish">
+                                <span>Sport Fish</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Stone">
+                                <span>Stone</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Sword">
+                                <span>Sword</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Tool">
+                                <span>Tool</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Toolbelt">
+                                <span>Toolbelt</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Wand">
+                                <span>Wand</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="WildCreature">
+                                <span>Wild Creature</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="itemSubCategory" value="Wood">
+                                <span>Wood</span>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="main-tab-box">
+                        <div class="main-tab-title">
+                            <span>Minimum Level</span>
+                            <img src="./_icons/down-arrow.svg" alt="">
+                        </div>
+                        <fieldset>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="" checked>
+                                <span>All levels</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="0">
+                                <span>Min Level: 0</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="1">
+                                <span>Min Level: 1</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="10">
+                                <span>Min Level: 10</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="20">
+                                <span>Min Level: 20</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="30">
+                                <span>Min Level: 30</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="40">
+                                <span>Min Level: 40</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="minimumLevel" value="50">
+                                <span>Min Level: 50</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <div class="center-content">
+                <form class="main-search-items-form">
+                    <label class="inline">
+                        <span>Sort By:</span>
+                        <select name="ordeby">
+                            <option value="">Name (A - Z)</option>
+                            <option value="">Name (Z - A)</option>
+                            <option value="">Level (Low - High)</option>
+                            <option value="">Level (High - Low)</option>
+                        </select>
+                    </label>
+
+                    <label class="inline">
+                        <span>Rarity:</span>
+                        <select name="rarity">
+                            <option value="common">Common</option>
+                            <option value="uncommon">Uncommon</option>
+                            <option value="rare">Rare</option>
+                            <option value="heroic">Heroic</option>
+                            <option value="epic">Epic</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                    </label>
+                    
+                </form>
+                <ul class="main-search-items">
+                    <li class="main-search-item scroll">
+                        <div class="left-content">
+                            <div class="box-image">
+                                <img src="https://cdn.ashescodex.com/UI/Icons/Items/Gear/Artisan/TUI_Icon_Novice_Processing_Shirt_TUI_Icon_Novice_Processing_Shirt_64.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h3>Novice Cook's Shirt</h3>
+                            <span>Common</span>
+                        </div>
+                    </li>
+                    <li class="main-search-item">
+                        <div class="left-content">
+                            <div class="box-image">
+                                <img src="https://cdn.ashescodex.com/UI/Icons/Items/Gear/Artisan/TUI_Icon_Novice_Gathering_Shirt_TUI_Icon_Novice_Gathering_Shirt_64.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h3>Novice Miner's Shirt</h3>
+                            <span>Common</span>
+                        </div>
+                    </li>
+                    <li class="main-search-item">
+                        <div class="left-content">
+                            <div class="box-image">
+                                <img src="https://cdn.ashescodex.com/UI/Icons/Items/Gear/Artisan/TUI_Icon_Novice_Gathering_Shirt_TUI_Icon_Novice_Gathering_Shirt_64.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h3>Novice Hunter's Shirt</h3>
+                            <span>Common</span>
+                        </div>
+                    </li>
+                    <li class="main-search-item">
+                        <div class="left-content">
+                            <div class="box-image">
+                                <img src="https://cdn.ashescodex.com/UI/Icons/Items/Gear/Artisan/TUI_Icon_Journeyman_Processing_Shirt_TUI_Icon_Journeyman_Processing_Shirt_64.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h3>Journeyman Cook's Shirt</h3>
+                            <span>Common</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content main-search-item-open">
+                <div class="item-card-content opened">
+                    <div class="item-card-header legendary">
+                        <div class="box-image">
+                            <img class="thumb" src="https://cdn.ashescodex.com/UI/Icons/Items/Gear/Weapon/Longbow/2H/TUI_Icon_Gear_Weapons_Longbow_2H_Rividium_TUI_Icon_Gear_Weapons_Longbow_2H_Rividium_64.webp" alt="Cindersinger">
+                        </div>
+                        <div class="right-content">
+                            <h3>Cindersinger</h3>
+                            <span>craft</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><span>25 - 37</span> Physical Accuracy Rating</li><li><span>25 - 37</span> Physical Penetration Rating</li><li><span>48 - 55</span> Physical Attack Speed Rating</li><li><span>424 - 487</span> Physical Power Rating</li><li><span>29 - 41</span> Physical Critical Chance Rating</li><li><span>29 - 41</span> Additive Weapon Fire Damage Rating</li>
+                    </ul>
+                    
+                    <div class="info">A legendary longbow built from rividium. Grants the wielder with an extreme increase in physical power and attack speed. May all your enemies burn.</div>
+                    <ul class="stats">
+                        <li>Required Level - 20</li>
+                        <li>Durability - 242</li>
+                    </ul>
+                </div>
+
+                <a href="./index.html" class="btn">View full recipe</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/scripts.js"></script>
+    <script src="./src/effects.js"></script>
+</body>
+</html>
