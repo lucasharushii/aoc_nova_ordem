@@ -1,3 +1,102 @@
+/* Header */
+.main-header-container {
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
+	position: relative;
+	z-index: 20;
+}
+.main-header-container .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	gap: 1.5rem;
+}
+.main-header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+.main-header-nav li {
+	margin-bottom: 0;
+}
+.main-header-nav a {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--brown-light);
+	transition: 0.4s ease;
+}
+.main-header-nav li:hover a {
+	color: var(--white);
+}
+.main-header-logged {
+	height: 6rem;
+	width: 6rem;
+	border-radius: 100%;
+	display: inline-block;
+	border: 3px solid #23e4d0;
+	position: relative;
+}
+.main-header-logged img {
+	border-radius: 100%;
+	border: 2px solid var(--black);
+}
+.main-header-logged:hover .main-menu-user-container {
+	display: block;
+}
+.main-menu-user-container {
+	display: none;
+	position: absolute;
+	left: -37rem;
+	top: 0;
+	width: 35rem;
+    border-image: linear-gradient(to right, #91876c 20%, #585140 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #000;
+    z-index: 10;
+}
+.main-menu-user-header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1.5rem;
+    padding: 1rem 2rem;
+
+}
+.main-menu-user-header .thumb {
+	border-radius: 100%;
+	display: block;
+	width: 5rem;
+	height: 5rem;
+}
+.main-menu-user-header h4 {
+	font-size: 1.8rem;
+}
+.main-menu-user-header span {
+	font-size: 1.4rem;
+	color: var(--brown-light);
+}
+.main-menu-user-nav {
+	border-top: 1px solid rgba(255, 255, 255, .2);
+	padding: 1rem 0;
+}
+.main-menu-user-nav li {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 0;
+    padding: 0.5rem 2rem;
+	transition: 0.4s ease;
+}
+.main-menu-user-nav li:hover {
+	background-color: rgba(255, 255, 255, .1);
+}
+.main-menu-user-nav span {
+	font-size: 1.6rem;
+}
+
 /* Search Page */
 .main-container-title {
 	border-top: 2px solid #1e6a5b;
@@ -11,7 +110,7 @@
 }
 
 .main-search-container {
-	padding: 6rem 1.5rem;
+	padding: 6rem 0;
 }
 .main-search-container .content {
 	display: flex;
@@ -132,7 +231,7 @@
 
 @media(max-width: 1215px) {
 	.main-search-container {
-		padding: 4rem 1.5rem;
+		padding: 4rem 0;
 	}
 	.main-search-container .content {
 		position: relative;
@@ -178,7 +277,7 @@
 
 /* Recipe Page */
 .main-item-board-container {
-	padding: 6rem 1.5rem;
+	padding: 6rem 0;
 }
 .main-item-board-container .main-container-title {
 	margin-bottom: 1.2rem;
