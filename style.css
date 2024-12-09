@@ -1,3 +1,4 @@
+/* Search Page */
 .main-container-title {
 	border-top: 2px solid #1e6a5b;
 	background: linear-gradient(180deg, #092622 0%, #0d322b 50%, #1f715f 100%);
@@ -73,6 +74,7 @@
 }
 .main-search-items {
 	height: 100%;
+	max-height: 50rem;
 	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
@@ -128,7 +130,53 @@
 	width: 100%;
 }
 
+@media(max-width: 1215px) {
+	.main-search-container {
+		padding: 4rem 1.5rem;
+	}
+	.main-search-container .content {
+		position: relative;
+	}
+	.main-search-container .content > .left-content,
+	.main-search-container .content > .center-content,
+	.main-search-container .content > .right-content {
+		max-width: 100%;
+		width: 100%;
+	}
+	.main-search-container .content > .left-content {
+		display: none;
+		position: absolute;
+		width: 100%;
+		max-width: 37rem;
+		padding: 1.5rem 1rem;
+		top: 8rem;
+		left: -100%;
+	}
+	.main-search-container .content > .center-content {
+		min-height: 80vh;
+		max-height: 100vh;
+	}
+	.main-search-container .content > .right-content {
+		position: absolute;
+		width: 100%;
+		max-width: 37rem;
+		padding: 1.5rem 1rem;
+		top: 8rem;
+		right: -100%;
+		display: flex;
+		flex-direction: column;
+		flex-flow: wrap;
+		align-items: center;
+		background-color: var(--black);
+		z-index: 10;
+	}
+	.main-search-container .main-search-item-open.opened {
+		right: 1.5rem !important;
+	}
+}
 
+
+/* Recipe Page */
 .main-item-board-container {
 	padding: 6rem 1.5rem;
 }
@@ -139,6 +187,7 @@
 .main-item-board-content {
 	min-height: 100vh;
 	display: flex;
+	margin-left: 10%;
 }
 .main-item-board-content .item-card-tier *::selection {
 	color: #FFFFFF;  background: transparent;
@@ -220,22 +269,6 @@
 	max-width: 0.5px;
 	background-color: var(--brown-light);
 }
-/* .item-card-box + .clear {
-	margin-top: 2rem;
-}
-.item-card-box + .clear:after {
-	content: "";
-	position: absolute;
-	top: -3.3rem;
-	left: calc(50% - 0.0px);
-	transform: translateX(-50%);
-	height: 2rem;
-	width: 1px;
-	max-width: 0.5px;
-	background-color: var(--brown-light);
-	display: block;
-	z-index: 31;
-} */
 .item-card-tier .clear:before {
 	content: "";
 	position: absolute;
@@ -249,16 +282,6 @@
 	display: block;
 	z-index: 1;
 }
-/* .item-card-tier .clear:after {
-	content: "";
-	position: absolute;
-	width: 1px;
-	max-width: 0.5px;
-	height: 3.2rem;
-	background-color: var(--brown-light);
-	bottom: 0;
-	z-index: 5;
-}  */
 .item-card-tier {
 	display: block;
 	float: left;

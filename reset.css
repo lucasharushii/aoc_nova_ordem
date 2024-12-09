@@ -504,3 +504,24 @@ form fieldset label input:checked + span {
 .main-tab-box.active fieldset {
 	display: block;
 }
+
+/* Modal */
+.close-modal {
+    display: none;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    background-color: var(--black);
+    z-index: 2;
+    transition: 0.4s ease;
+}
+.close-modal:hover {
+    filter: brightness(2);
+}
+@media(max-width: 1215px) {
+    .close-modal {
+        display: block;
+    }
+}
